@@ -19,7 +19,7 @@
 #' @param agg character, distance aggregation method, either (default), or "mean".
 #' @param dist_type character; for Cartesian coordinates only: one of Euclidean,
 #'                  Hausdorff or Frechet; for geodetic coordinates, great circle
-#'                  distances are computed; sf::st_distance()
+#'                  distances are computed; see sf::st_distance()
 #' @param alternative character, the alternative hypothesis: either "two.sided" (default),
 #'                    "greater" or "less".
 #' @param orig_names a vector of the names of potential origins
