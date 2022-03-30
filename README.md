@@ -1,11 +1,11 @@
 # GeoTrace
 
-## install package
+## Install package
 ```{r}
 library(devtools)
 install_github("gsnrguo/GeoTrace")
 ```
-## example
+## Example
 ```{r}
 cases <- house_death[house_death$death_dum==1,]
 BS_cholera <- geotrace(cases, pumps, house_death)
