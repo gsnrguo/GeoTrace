@@ -1,4 +1,4 @@
-# GeoTrace
+# GeoTrace: Analysis potential origins of infectious diseases from spatial distance
 
 ## Install package
 ```{r}
