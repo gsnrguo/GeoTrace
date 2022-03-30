@@ -55,16 +55,16 @@
 geotrace <- function(case,origins,pop, nsim=999, prob = NULL, agg="median",
                      dist_type = ifelse(isTRUE(st_is_longlat(case)), "Great Circle", "Euclidean"),
                      alternative = "two.sided", orig_names = NULL, seed = NULL){
-  crs_info <- st_crs(case)$input
+  crs_info <- st_crs(case)
   if (!(alternative %in% c("two.sided","greater", "less"))){
     stop("alternative must be one of two.sided, greater and less" )
   }
 
-  if (st_crs(origins)$input != crs_info){
+  if (st_crs(origins) != crs_info){
     stop("The case and origins must have same crs ")
   }
 
-  if (st_crs(pop)$input != crs_info){
+  if (st_crs(pop) != crs_info){
     stop("The pop and origins must have same crs ")
   }
 
