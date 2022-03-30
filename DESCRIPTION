@@ -6,7 +6,7 @@ Author: Guojg
 Maintainer: The package maintainer <guojg@lreis.ac.cn>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
-License: GPL-2
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 LazyDataCompression:xz
