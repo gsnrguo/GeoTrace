@@ -35,8 +35,10 @@
 #' ###############
 #' ## JohnSnow 1854 Broad Street cholera outbreak
 #' ###############
+#' pumps$name
+#' sim_names <-c("Broad St","Great Mal.", "Ramilies Place","Rupert St","Brewer St","Warwick St")
 #' cases <- house_death[house_death$death_dum==1,]
-#' BS_cholera <- geotrace(cases, pumps, house_death)
+#' BS_cholera <- geotrace(cases, pumps, house_death, orig_names = sim_names)
 #' BS_cholera
 #' plot(BS_cholera)
 #'
@@ -44,7 +46,8 @@
 #' #############
 #' ## Origins of Wuhan Covid-19
 #' #############
-#' orig_names <- location$Name
+#' location$Name 
+#' orig_names <- c("Baishazhou", "Qiyimen", "Huanan Market", "Virology Labs", "Yangchahu")
 #' WH_cov19 <- geotrace(covid19_wh,location, wuhan_pop, prob = wuhan_pop$Wuhan_PPP,
 #'            orig_names = orig_names)
 #' WH_cov19
