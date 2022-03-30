@@ -10,6 +10,7 @@ install_github("gsnrguo/GeoTrace")
 
 ### 1854 Broad Street cholera outbreak
 ```{r}
+library(GeoTrace)
 pumps$name
 sim_names <-c("Broad St","Great Mal.", "Ramilies Place","Rupert St","Brewer St","Warwick St")
 cases <- house_death[house_death$death_dum==1,]
